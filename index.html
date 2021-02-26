@@ -473,11 +473,17 @@
               <p class="contacts__form-title">
                 Or just write me a letter here_
               </p>
-              <form class="js-form">
+              <form
+                class="js-form"
+                name="contact-form"
+                data-netlify="true"
+                method="POST"
+              >
                 <div class="form-group">
                   <input
                     class="form-field js-field-name"
                     type="text"
+                    name="name"
                     placeholder="Your name"
                     required
                   />
@@ -490,6 +496,7 @@
                   <input
                     class="form-field js-field-email"
                     type="email"
+                    name="email"
                     placeholder="Your e-mail"
                     required
                   />
@@ -502,6 +509,7 @@
                   <textarea
                     class="form-field js-field-message"
                     placeholder="Type the message here"
+                    name="message"
                     required
                   ></textarea>
                   <span class="form-validation"></span>

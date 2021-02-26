@@ -1,13 +1,13 @@
 <?php
 
-	$emailTo = "f.falco@sandp-pro.com"; // Enter your email for feedbacks here
+	$emailTo = "falco.felipe27@gmail.com";
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=utf-8\r\n";
 	$headers .= "From: ".$_POST['email']."\r\n";
 
 	if (!isset($_POST['subject'])) {
-		$subject = "Portfolio Contact Form Message"; // Enter your subject here
+		$subject = "Portfolio Contact Form Message";
 	} else {
 		$subject = $_POST['subject'];
 	}
