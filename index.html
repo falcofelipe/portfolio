@@ -144,14 +144,14 @@
 			</div>
 			<div class="portfolio-cards">
 				<div class="row project-card" data-portfolio-tag="web-sites">
-					<div class="col-md-6 col-lg-5 project-card__img">
+					<div class="col-lg-5 project-card__img">
 						<img
 							class=""
-							src="assets/img/portfolio1-andrewsMedicine.jpg"
+							src="assets/img/portfolio-images/portfolio1-andrewsMedicine-img1.png"
 							alt="project-img"
 						/>
 					</div>
-					<div class="col-md-6 col-lg-7 project-card__info">
+					<div class="col-lg-7 project-card__info">
 						<h3 class="project-card__title">
 							<a
 								class="title-link"
@@ -182,25 +182,29 @@
 							<li>HTML5 & CSS3</li>
 							<li>JavaScript</li>
 						</ul>
-						<!--<a
-              href="https://github.com/falcofelipe/mycookbook"
-              class="btn project-card__link-git"
-              target="_blank"
-              ><i class="fa fa-github"></i> Github</a
-            >-->
-						<a
-							href="https://andrewsmedicine.com/"
-							class="btn project-card__link mr-4"
-							target="_blank"
-							>Go to Project</a
-						>
+						<div class="project-buttons">
+							<button
+								class="btn project-card__link-modal mr-4"
+								target="_blank"
+								data-toggle="modal"
+								data-target="#portfolioModal1"
+							>
+								More Images
+							</button>
+							<a
+								href="https://andrewsmedicine.com/"
+								class="btn project-card__link mr-4"
+								target="_blank"
+								>Go to Project</a
+							>
+						</div>
 					</div>
 				</div>
 				<div class="row project-card" data-portfolio-tag="mobile apps">
 					<div class="col-md-6 col-lg-5 project-card__img">
 						<img
 							class=""
-							src="assets/img/portfolio2-navitasWealth.jpg"
+							src="assets/img/portfolio-images/portfolio2-navitasWealth-img1.png"
 							alt="project-img"
 						/>
 					</div>
@@ -233,12 +237,22 @@
 							<li>HTML5 & CSS3</li>
 							<li>JavaScript</li>
 						</ul>
-						<a
-							href="https://navitaswa.com/"
-							class="btn project-card__link mr-4"
-							target="_blank"
-							>Go to Project</a
-						>
+						<div class="project-buttons">
+							<button
+								class="btn project-card__link-modal mr-4"
+								target="_blank"
+								data-toggle="modal"
+								data-target="#portfolioModal2"
+							>
+								More Images
+							</button>
+							<a
+								href="https://navitaswa.com/"
+								class="btn project-card__link mr-4"
+								target="_blank"
+								>Go to Project</a
+							>
+						</div>
 					</div>
 				</div>
 				<div
@@ -248,7 +262,7 @@
 					<div class="col-md-6 col-lg-5 project-card__img">
 						<img
 							class=""
-							src="assets/img/portfolio3-insightTherapyCenter.jpg"
+							src="assets/img/portfolio-images/portfolio3-ginnLaw-img1.png"
 							alt="project-img"
 						/>
 					</div>
@@ -256,23 +270,20 @@
 						<h3 class="project-card__title">
 							<a
 								class="title-link"
-								href="https://insightcenterlaurel.com/"
+								href="https://ginn-law.com/"
 								target="_blank"
-								>Insight Therapy Center</a
+								>Ginn Law</a
 							>
 						</h3>
 						<p class="project-card__description">
-							This project was one of the first projects completed
-							while working at my previous job. The website was
-							developed for a Therapy Center in Mississipi that
-							focuses on pediatric services, and it was created in
+							The Ginn Law website was developed last year for a
+							Law Firm in Missisipi, and it was created in
 							Wordpress using the Divi Page Builder plugin. It has
-							a simple, fun design, while still maintaining
-							professionalism. It has several customized CSS
-							animations when hovering over elements, that
-							together with the bold color choices make the site
-							stand out. This website was completed in around a
-							week of development time.
+							a simple, but formal design, with a few classic
+							elements and images. It has some customized CSS
+							elements, but it was mostly created using Divi's
+							page builder functionalities. This website was
+							completed in around a week of development time.
 						</p>
 						<p class="project-card__stack">Tech used:</p>
 						<ul class="tags">
@@ -280,12 +291,22 @@
 							<li>Divi</li>
 							<li>HTML5 & CSS3</li>
 						</ul>
-						<a
-							href="https://insightcenterlaurel.com/"
-							class="btn project-card__link mr-4"
-							target="_blank"
-							>Go to Project</a
-						>
+						<div class="project-buttons">
+							<button
+								class="btn project-card__link-modal mr-4"
+								target="_blank"
+								data-toggle="modal"
+								data-target="#portfolioModal3"
+							>
+								More Images
+							</button>
+							<a
+								href="https://ginn-law.com/"
+								class="btn project-card__link mr-4"
+								target="_blank"
+								>Go to Project</a
+							>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -615,69 +636,322 @@
 		</div>
 		<!--Contact-->
 
-		<!-- Portfolio Modal -->
-		<!-- <div
-      class="modal fade portfolio-modal"
-      id="portfolioModal"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
-            <p class="portfolio-modal__title">Ben's Café</p>
-            <img
-              class="portfolio-modal__img"
-              src="assets/img/portfolio1-benscafe.jpg"
-              alt="modal_img"
-            />
-            <p class="portfolio-modal__description">
-              A simple front- and back-end single-page web application built as
-              a potential client request for a Café in Melbourne. In this
-              project, you have the ability to update, add and remove content
-              from the website through the Admin Dashboard (authentication
-              included), all by communicating to the back-end server with REST
-              API calls through an intuitive and minimalistic layout.
-            </p>
-            <div class="portfolio-links text-center">
-              <a
-                href="https://bens-cafe.herokuapp.com/"
-                class="btn portfolio-modal__link mr-4"
-                >Go to Project</a
-              >
-              <a
-                href="https://bens-cafe.herokuapp.com/"
-                class="btn portfolio-modal__link-git"
-                ><i class="fa fa-github"></i> Github</a
-              >
-            </div>
-            <div class="portfolio-modal__stack">
-              <p class="portfolio-modal__stack-title">Tech Used:</p>
-              <ul class="tags">
-                <li>React.js</li>
-                <li>Node.js & Express</li>
-                <li>Mongoose & MongoDB</li>
-                <li>JavaScript</li>
-                <li>HTML5 & CSS3</li>
-                <li>Bootstrap 4</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-		<!-- Portfolio Modal -->
+		<!-- MODALS -->
+		<div
+			class="modal fade portfolio-modal"
+			id="portfolioModal1"
+			tabindex="-1"
+			role="dialog"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li
+								data-target="portfolioModal1-carousel"
+								data-slide-to="0"
+								class="active"
+							></li>
+							<li
+								data-target="#portfolioModal1-carousel"
+								data-slide-to="1"
+							></li>
+							<li
+								data-target="#portfolioModal1-carousel"
+								data-slide-to="2"
+							></li>
+							<li
+								data-target="#portfolioModal1-carousel"
+								data-slide-to="3"
+							></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio1-andrewsMedicine-img1.png"
+									alt="Andrews Medicine Home page"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio1-andrewsMedicine-img2.png"
+									alt="Andrews Medicine Blog page"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio1-andrewsMedicine-img3.png"
+									alt="Andrews Medicine Brand page showcasing Brand Toggles"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio1-andrewsMedicine-img4.png"
+									alt="Andrews Medicine Brand page showcasing Interactive Map"
+								/>
+							</div>
+						</div>
+						<a
+							class="carousel-control-prev"
+							href="#portfolioModal1-carousel"
+							role="button"
+							data-slide="prev"
+						>
+							<span
+								class="fa fa-chevron-left"
+								aria-hidden="true"
+							></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a
+							class="carousel-control-next"
+							href="#portfolioModal1-carousel"
+							role="button"
+							data-slide="next"
+						>
+							<span
+								class="fa fa-chevron-right"
+								aria-hidden="true"
+							></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modal fade portfolio-modal"
+			id="portfolioModal2"
+			tabindex="-1"
+			role="dialog"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li
+								data-target="portfolioModal2-carousel"
+								data-slide-to="0"
+								class="active"
+							></li>
+							<li
+								data-target="#portfolioModal2-carousel"
+								data-slide-to="1"
+							></li>
+							<li
+								data-target="#portfolioModal2-carousel"
+								data-slide-to="2"
+							></li>
+							<li
+								data-target="#portfolioModal2-carousel"
+								data-slide-to="3"
+							></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio2-navitasWealth-img1.png"
+									alt="Navitas Wealth Home page"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio2-navitasWealth-img2.png"
+									alt="Navitas Wealth Our Approach page"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio2-navitasWealth-img3.png"
+									alt="Navitas Wealth Our Team page"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio2-navitasWealth-img4.png"
+									alt="Navitas Wealth Contact page"
+								/>
+							</div>
+						</div>
+						<a
+							class="carousel-control-prev"
+							href="#portfolioModal2-carousel"
+							role="button"
+							data-slide="prev"
+						>
+							<span
+								class="fa fa-chevron-left"
+								aria-hidden="true"
+							></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a
+							class="carousel-control-next"
+							href="#portfolioModal2-carousel"
+							role="button"
+							data-slide="next"
+						>
+							<span
+								class="fa fa-chevron-right"
+								aria-hidden="true"
+							></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modal fade portfolio-modal"
+			id="portfolioModal3"
+			tabindex="-1"
+			role="dialog"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li
+								data-target="portfolioModal3-carousel"
+								data-slide-to="0"
+								class="active"
+							></li>
+							<li
+								data-target="#portfolioModal3-carousel"
+								data-slide-to="1"
+							></li>
+							<li
+								data-target="#portfolioModal3-carousel"
+								data-slide-to="2"
+							></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio3-ginnLaw-img1.png"
+									alt="Ginn Law Home page"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio3-ginnLaw-img2.png"
+									alt="Ginn Law Personal Injury page"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									class="d-block w-100"
+									src="assets/img/portfolio-images/portfolio3-ginnLaw-img3.png"
+									alt="Ginn Law About Joshua Ginn page"
+								/>
+							</div>
+						</div>
+						<a
+							class="carousel-control-prev"
+							href="#portfolioModal3-carousel"
+							role="button"
+							data-slide="prev"
+						>
+							<span
+								class="fa fa-chevron-left"
+								aria-hidden="true"
+							></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a
+							class="carousel-control-next"
+							href="#portfolioModal3-carousel"
+							role="button"
+							data-slide="next"
+						>
+							<span
+								class="fa fa-chevron-right"
+								aria-hidden="true"
+							></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<div
+			class="modal fade portfolio-modal"
+			id="portfolioModal2"
+			tabindex="-1"
+			role="dialog"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+						<p class="portfolio-modal__title">Ben's Café</p>
+						<img
+							class="portfolio-modal__img"
+							src="assets/img/portfolio1-benscafe.jpg"
+							alt="modal_img"
+						/>
+						<p class="portfolio-modal__description">
+							A simple front- and back-end single-page web
+							application built as a potential client request for
+							a Café in Melbourne. In this project, you have the
+							ability to update, add and remove content from the
+							website through the Admin Dashboard (authentication
+							included), all by communicating to the back-end
+							server with REST API calls through an intuitive and
+							minimalistic layout.
+						</p>
+						<div class="portfolio-links text-center">
+							<a
+								href="https://bens-cafe.herokuapp.com/"
+								class="btn portfolio-modal__link mr-4"
+								>Go to Project</a
+							>
+							<a
+								href="https://bens-cafe.herokuapp.com/"
+								class="btn portfolio-modal__link-git"
+								><i class="fa fa-github"></i> Github</a
+							>
+						</div>
+						<div class="portfolio-modal__stack">
+							<p class="portfolio-modal__stack-title">
+								Tech Used:
+							</p>
+							<ul class="tags">
+								<li>React.js</li>
+								<li>Node.js & Express</li>
+								<li>Mongoose & MongoDB</li>
+								<li>JavaScript</li>
+								<li>HTML5 & CSS3</li>
+								<li>Bootstrap 4</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
 
 		<script src="assets/js/jquery-2.2.4.min.js"></script>
 		<script src="assets/js/popper.min.js"></script>
